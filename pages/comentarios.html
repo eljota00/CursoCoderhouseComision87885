@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="../index.html"><img src="../assets/canserbero-seeklogo.png" height="100" width="100" alt="logotipo"></a>
+        <nav class="navbar">
+            <a href="../index.html"><img src="../assets/canserbero-seeklogo.png" height="50" width="50" alt="logotipo"></a>
                 <ul>
                     <li><a href="./biografia.html">Biografia</a></li>
                     <li><a href="./canciones-albumesl.html">Canciones y Albumes</a></li>
@@ -21,38 +21,26 @@
     </header>
     <main>
         <section class="comentarios">
-            <form action="/submit">
-                <div>
-                    <label for="comentarios">
-                        <h2>Puedes dejarnos tus reseñas en este apartado:</h2>
-                        ¿Te gusto el sitio web?
-                        <br>
-                        <input type="radio" name="comentarios" id="comentarios">
-                        <label for="comentarios">si</label>
-                        <br>
-                        <input type="radio" name="comentarios" id="comentarios">
-                        <label for="comentarios">no</label>
-                        <br>
-                        <input type="radio" name="comentarios" id="comentarios">
-                        <label for="comentarios">podria mejorar</label>
-                    </label>
-                </div>
-                <br>
-                <div>
-                    <label for="comentarios">
-                        <h2>Dejanos una reseña para tenerla en cuenta</h2>
-                        <textarea name="comentarios" id="comentarios" cols="50" rows="8"></textarea>
-                    </label>
-                </div>
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
+            <!-- From Uiverse.io by omriluz --> 
+<div class="form-container">
+      <form class="form">
+        <div class="form-group">
+          <label for="email">Company Email</label>
+          <input required="" name="email" id="email" type="text">
+        </div>
+        <div class="form-group">
+          <label for="textarea">How Can We Help You?</label>
+          <textarea required="" cols="50" rows="10" id="textarea" name="textarea">          </textarea>
+        </div>
+        <button type="submit" class="form-submit-btn">Submit</button>
+      </form>
+    </div>
         </section>
     </main>
     <br>
     <footer>
         <div class="logofooter">
-            <a href="#"><img src="./assets/canserbero-seeklogo.png" height="200px" width="200px" alt="Logotipo"></a>
+            <a href="../index.html"><img src="../assets/canserbero-seeklogo.png" height="200px" width="200px" alt="Logotipo"></a>
         </div>
         <div class="subfooter">   
             <h2>
