@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.carrusel {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 header {
   background-color: black;
 }
@@ -26,6 +31,56 @@ header .navbar ul li a {
   color: white;
 }
 
+@media (max-width: 768px) {
+  header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+  header .navbar ul li {
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 20px;
+  }
+  header .navbar ul li a {
+    color: white;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+  header .navbar ul li {
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 20px;
+  }
+  header .navbar ul li a {
+    color: white;
+  }
+}
 main {
   background-color: white;
 }
@@ -44,6 +99,9 @@ main section div h3 {
 main section div p {
   font-size: 30px;
   margin-top: 15px;
+}
+main section div a {
+  color: black;
 }
 main section .acerca-de-can {
   display: flex;
@@ -201,6 +259,374 @@ main .comentarios .form-container .form-submit-btn:hover {
   border-color: #fff;
 }
 
+@media (max-width: 768px) {
+  body main {
+    background-color: white;
+  }
+  body main section {
+    width: 100%;
+  }
+  body main section div {
+    background-color: #EAE4D5;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+  }
+  body main section div h2 {
+    font-size: 22.5px;
+  }
+  body main section div h3 {
+    font-size: 15.25px;
+  }
+  body main section div p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  body main section div a {
+    color: black;
+  }
+  body main section .acerca-de-can {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .acerca-de-can img {
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+  }
+  body main section .acerca-de-can .desc-can {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .musica1 {
+    align-items: center;
+    justify-content: center;
+  }
+  body main section .su-musica {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe .iframe-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .temasiframe .iframe-1 .desc1 {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe .iframe-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .temasiframe .iframe-2 .desc2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe .iframe-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .temasiframe .iframe-3 .desc3 {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .comentarios {
+    justify-content: center;
+    align-items: center;
+    /* From Uiverse.io by omriluz */
+  }
+  body main .comentarios div {
+    background-color: #212121;
+  }
+  body main .comentarios .form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body main .comentarios .form-container button:active {
+    scale: 0.95;
+  }
+  body main .comentarios .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  body main .comentarios .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  body main .comentarios .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  body main .comentarios .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  body main .comentarios .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  body main .comentarios .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  body main .comentarios .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  body main .comentarios .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  body main .comentarios .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  body main .comentarios .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+}
+@media (max-width: 425px) {
+  body main {
+    background-color: white;
+  }
+  body main section {
+    width: 100%;
+  }
+  body main section div {
+    background-color: #EAE4D5;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+  }
+  body main section div h2 {
+    font-size: 22.5px;
+  }
+  body main section div h3 {
+    font-size: 15.25px;
+  }
+  body main section div p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  body main section div a {
+    color: black;
+  }
+  body main section .acerca-de-can {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .acerca-de-can img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+  body main section .acerca-de-can .desc-can {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .musica1 {
+    align-items: center;
+    justify-content: center;
+  }
+  body main section .su-musica {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe .iframe-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .temasiframe .iframe-1 .desc1 {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe .iframe-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .temasiframe .iframe-2 .desc2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body main section .temasiframe .iframe-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  body main section .temasiframe .iframe-3 .desc3 {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .comentarios {
+    justify-content: center;
+    align-items: center;
+    /* From Uiverse.io by omriluz */
+  }
+  body main .comentarios div {
+    background-color: #212121;
+  }
+  body main .comentarios .form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body main .comentarios .form-container button:active {
+    scale: 0.95;
+  }
+  body main .comentarios .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  body main .comentarios .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  body main .comentarios .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  body main .comentarios .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  body main .comentarios .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  body main .comentarios .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  body main .comentarios .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  body main .comentarios .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  body main .comentarios .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  body main .comentarios .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -302,6 +728,224 @@ footer .redes .uiverse .example-2 .icon-content a[data-social=instagram] ~ .tool
 footer .redes .uiverse .example-2 .icon-content a[data-social=youtube] .filled,
 footer .redes .uiverse .example-2 .icon-content a[data-social=youtube] ~ .tooltip {
   background-color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  footer .subfooter h2 {
+    font-size: 50px;
+    color: white;
+    margin: 30px;
+  }
+  footer .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .redes .uiverse {
+    /* From Uiverse.io by wilsondesouza */
+  }
+  footer .redes .uiverse ul {
+    list-style: none;
+  }
+  footer .redes .uiverse .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .redes .uiverse .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  footer .redes .uiverse .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  footer .redes .uiverse .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  footer .redes .uiverse .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .redes .uiverse .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+  }
+  footer .redes .uiverse .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  footer .redes .uiverse .example-2 .icon-content a:hover {
+    color: white;
+  }
+  footer .redes .uiverse .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .redes .uiverse .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=whatsapp] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=whatsapp] ~ .tooltip {
+    background-color: #128c7e;
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=facebook] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=facebook] ~ .tooltip {
+    background-color: #3b5998;
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=instagram] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=instagram] ~ .tooltip {
+    background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=youtube] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=youtube] ~ .tooltip {
+    background-color: #ff0000;
+  }
+}
+@media (max-width: 425px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  footer .logofooter a img {
+    display: flex;
+    width: 10px;
+    height: auto;
+  }
+  footer .subfooter h2 {
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+  }
+  footer .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .redes .uiverse {
+    /* From Uiverse.io by wilsondesouza */
+  }
+  footer .redes .uiverse ul {
+    list-style: none;
+  }
+  footer .redes .uiverse .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .redes .uiverse .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  footer .redes .uiverse .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  footer .redes .uiverse .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  footer .redes .uiverse .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .redes .uiverse .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+  }
+  footer .redes .uiverse .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  footer .redes .uiverse .example-2 .icon-content a:hover {
+    color: white;
+  }
+  footer .redes .uiverse .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  footer .redes .uiverse .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=whatsapp] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=whatsapp] ~ .tooltip {
+    background-color: #128c7e;
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=facebook] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=facebook] ~ .tooltip {
+    background-color: #3b5998;
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=instagram] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=instagram] ~ .tooltip {
+    background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+  }
+  footer .redes .uiverse .example-2 .icon-content a[data-social=youtube] .filled,
+  footer .redes .uiverse .example-2 .icon-content a[data-social=youtube] ~ .tooltip {
+    background-color: #ff0000;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
